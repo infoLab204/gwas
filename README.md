@@ -11,7 +11,6 @@ install.packages(“kendall”)
 library(kendall)
 
 R-script tutorial
-
 ■ Generating simulated data: gen_sim.R
 To generate simulated data, run gen_sim.R with the following parameters.
 # q: minor allele frequency,   # pi: the rate of the variation,  # n: number of samples,	# rho: shuffling rate
