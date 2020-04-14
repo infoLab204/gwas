@@ -14,8 +14,8 @@ We proposed Kendall's test as a robust association test under different genotype
      library(seqinr)
 
 
-### R-script tutorial
-#### Generating simulated data: gen_sim.R
+## R-script tutorial
+### Generating simulated data: gen_sim.R
 To generate simulated data, run gen_sim.R with the following parameters.
 
      # q: minor allele frequency, # pi: the rate of the variation, #snp : number of snp, 
@@ -26,7 +26,7 @@ To generate simulated data, run gen_sim.R with the following parameters.
 sim_geno1.txt, sim_geno2.txt  <tab># simulated genotype data<br>
 sim_pheno.txt  <tab># simulated phenotype data
 
-#### Performing statistical tests 
+### Performing statistical tests 
 Association analysis. Simply load in genotype and phenotype data into stest.R as geno and pheno variables. Output will be the frequency distribution of ∆p_i and skewness and kurtosis of the distribution. We provide genotype and phenotype of real data, which are listed and described as follows
 
 Once the data has been loaded into R, the stest.R for association test can be run with a single command:
@@ -41,9 +41,9 @@ geno: sim_geno1.txt, sim_geno2.txt (or real_geno1.txt, real_geno2.txt) <br>
 pheno: sim_pheno.txt (or real_pheno.txt) 
 
 **Output**<br>
-tname.jpg : the frequency distribution of ∆p_i   # tname : trait name  <br>
+tname.jpg : the frequency distribution of ∆p_i   < # tname : trait name  <br>
 boxplot.jpg : box plots of skewness and kurtosis
 
-### Real data
+## Real data
 real_geno1.txt, real_geno2.txt : genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2} and E_2={-1,0,1} <br>
 real_pheno.txt : phenotype data of 30 traits across 193 samples
