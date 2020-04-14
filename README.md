@@ -22,9 +22,9 @@ To generate simulated data, run gen_sim.R with the following parameters.
      # n: number of samples, # rho: shuffling rate
      gen_sim(q, pi, snp, n, rho)
      
-**output** 
-* sim_geno1.txt, sim_geno2.txt # simulated genotype data
-* sim_pheno.txt# simulated phenotype data
+**output**
+* sim_geno1.txt, sim_geno2.txt : simulated genotype data
+* sim_pheno.txt : simulated phenotype data
 
 ### Performing statistical tests 
 Association analysis. Simply load in genotype and phenotype data into stest.R as geno and pheno variables. Output will be the frequency distribution of ∆p_i and skewness and kurtosis of the distribution. We provide genotype and phenotype of real data, which are listed and described as follows
