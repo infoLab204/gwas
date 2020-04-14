@@ -20,9 +20,10 @@ To generate simulated data, run gen_sim.R with the following parameters.
 
      # q: minor allele frequency, # pi: the rate of the variation, #snp : number of snp, 
      # n: number of samples,	# rho: shuffling rate
-     **gen_sim(q, pi, snp, n, rho)**
+     gen_sim(q, pi, snp, n, rho)
      
 **output** 
+
 sim_geno1.txt, sim_geno2.txt  # simulated genotype data
 
 sim_pheno.txt  # simulated phenotype data
@@ -35,19 +36,22 @@ Once the data has been loaded into R, the stest.R for association test can be ru
 Run the stest.R for association test with the following parameters
 
      geno1, geno2: genotype data,	# pheno: phenotype data,	# n_pca: number of principal components
-      **stest(geno1,geno2, pheno, n_pca=4)**
+     stest(geno1,geno2, pheno, n_pca=4)
       
 **Input** 
+
 geno: sim_geno1.txt, sim_geno2.txt (or real_geno1.txt, real_geno2.txt)
 
 pheno: sim_pheno.txt (or, real_pheno.txt) 
 
 **Output**
+
 tname.jpg : the frequency distribution of ∆p_i   # tname : trait name 
 
 boxplot.jpg : box plots of skewness and kurtosis
 
 **Real data**
+
 real_geno1.txt, real_geno2.txt : genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2} and E_2={-1,0,1} 
 
 real_pheno.txt : phenotype data of 30 traits across 193 samples
