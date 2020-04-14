@@ -1,7 +1,7 @@
 if(!require(seqinr)) install.packages("seqinr")
 library(seqinr)
 
-gen_sim <- function(q, pi,snp,n, rho)
+gen_sim <- function(q, pi, snp, n, rho)
 {
     
     geno_type1 <- matrix(data=NA, nrow=snp, ncol=n)
