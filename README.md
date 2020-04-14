@@ -2,7 +2,7 @@
  
 Sunhee Kim and Chang-Yong Lee
 
-R/Statest represents R scripts to perform Kendall’s and Pearson’s association test to assess the robustness under different genotype encodings by using simulated as well as real data sets. 
+R/Statest represents R scripts to perform Kendall’s and Pearson’s association test to assess the robustness under different genotype encodings by using simulated as well as real data sets. <br><br>
 We proposed Kendall's test as a robust association test under different genotype encodings in a genome-wide association analysis of continuous traits. The R scripts provide the assessment of Kendall’s test and compares with that of Pearson's test in terms of the difference in p-values obtained by using different genotype encodings. We provide the R scripts together with real data sets in order for the readers to reproduce the results discussed in the manuscript.
 
 **Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository<br>
@@ -23,8 +23,8 @@ To generate simulated data, run gen_sim.R with the following parameters.
      gen_sim(q, pi, snp, n, rho)
      
 **output** <br>
-sim_geno1.txt, sim_geno2.txt  # simulated genotype data<br>
-sim_pheno.txt  # simulated phenotype data
+sim_geno1.txt, sim_geno2.txt  <tab># simulated genotype data<br>
+sim_pheno.txt  <tab># simulated phenotype data
 
 #### Performing statistical tests 
 Association analysis. Simply load in genotype and phenotype data into stest.R as geno and pheno variables. Output will be the frequency distribution of ∆p_i and skewness and kurtosis of the distribution. We provide genotype and phenotype of real data, which are listed and described as follows
