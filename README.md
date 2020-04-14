@@ -18,7 +18,8 @@ We proposed Kendall's test as a robust association test under different genotype
 #### Generating simulated data: gen_sim.R
 ##### To generate simulated data, run gen_sim.R with the following parameters.
 
-     #q: minor allele frequency,   # pi: the rate of the variation,  #snp : number of snp, # n: number of samples,	# rho: shuffling rate
+     #q: minor allele frequency,   # pi: the rate of the variation,  #snp : number of snp, 
+     # n: number of samples,	# rho: shuffling rate
      gen_sim(q, pi, snp, n, rho)
 ##### output 
 ##### sim_geno1.txt, sim_geno2.txt  # simulated genotype data
@@ -28,7 +29,7 @@ We proposed Kendall's test as a robust association test under different genotype
 ##### Association analysis. Simply load in genotype and phenotype data into stest.R as geno and pheno variables. Output will be the frequency distribution of ∆p_i and skewness and kurtosis of the distribution. We provide genotype and phenotype of real data, which are listed and described as follows
 ##### Once the data has been loaded into R, the stest.R for association test can be run with a single command:
 ##### Run the stest.R for association test with the following parameters
-     geno: genotype data,	# pheno: phenotype data,	# n_pca: number of principal components
+     geno1, geno2: genotype data,	# pheno: phenotype data,	# n_pca: number of principal components
      stest(geno1,geno2, pheno, n_pca=4)
 ##### Input 
 ##### geno: sim_geno1.txt, sim_geno2.txt (or real_geno1.txt, real_geno2.txt)
