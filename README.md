@@ -8,12 +8,12 @@ We proposed Kendall's test as a robust association test under different genotype
 **Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository   
 **Install prerequisites**: install kendall packages and seqinr packages
 
-'install.packages(“kendall”)
-library(kendall)
-install.packages(“seqinr”)
-library(seqinr)'
-
-
+     install.packages(“kendall”)
+     library(kendall)
+     install.packages(“seqinr”)
+     library(seqinr)
+     
+     
 ## R-script tutorial
 ### Generating simulated data: gen_sim.R
 To generate simulated data, run gen_sim.R with the following parameters.
