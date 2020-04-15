@@ -27,7 +27,7 @@ To generate simulated data, run gen_sim.R with the following parameters.
      n: number of samples, rho: shuffling rate
 (eg) gen_sim(0.25, 0.05, 20000, 300, 0.5)
 
-**output**
+**output**   
 sim_geno1.txt: simulated genotype data with encodings E_1={0,1,2}   
 sim_geno2.txt : simulated genotype data with encodings E_1={0,1,2}   
 sim_pheno.txt : simulated phenotype data   
