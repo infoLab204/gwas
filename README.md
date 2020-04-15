@@ -47,11 +47,11 @@ Run the stest.R for association test with the following parameters
 (eg2) stest(real_geno1.txt, real_geno2.txt, real_pheno.txt, n_pca=4)  
 
 
-**Output**
-* xxx.jpg : the frequency distribution of ∆p_i    # xxx : trait name
-* boxplots.jpg : box plots of skewness and kurtosis
+**Output**   
+xxx.jpg : the frequency distribution of ∆p_i    # xxx : trait name   
+boxplots.jpg : box plots of skewness and kurtosis   
 
-## Real data
-* real_geno1.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2}
-* real_geno2.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_2={-1,0,1} 
-* real_pheno.txt : phenotype data of 30 traits across 193 samples
+## Real data   
+real_geno1.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2}   
+real_geno2.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_2={-1,0,1}    
+real_pheno.txt : phenotype data of 30 traits across 193 samples   
