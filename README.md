@@ -7,8 +7,8 @@ R/Statest represents R scripts to perform Kendall’s and Pearson’s associatio
 We proposed Kendall's test as a robust association test under different genotype encodings in a genome-wide association analysis of continuous traits. The R scripts provide the assessment of Kendall’s test and compares with that of Pearson's test in terms of the difference in p-values obtained by using different genotype encodings. We provide the R scripts together with real data sets in order for the readers to reproduce the results discussed in the manuscript.
 
 **Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository     
-**gen_sim.R**: generating simulated data   
-**stest.R**: statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
+> gen_sim.R : generating simulated data   
+> stest.R : statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
 
 **Install prerequisites**: install kendall packages and seqinr packages
 
