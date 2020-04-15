@@ -10,12 +10,12 @@ We proposed Kendall's test as a robust association test under different genotype
 * gen_sim.R : generating simulated data
 * stest.R : statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
 
-**Install prerequisites**: install kendall packages and seqinr packages
+**Install prerequisites**: install seqinr and Kendall packages 
 
-     install.packages(“kendall”)
-     library(kendall)
      install.packages(“seqinr”)
      library(seqinr)
+     install.packages(“Kendall”)
+     library(Kendall)
 
      
 ## R-script tutorial
