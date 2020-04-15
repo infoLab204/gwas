@@ -6,9 +6,9 @@ R/Statest represents R scripts to perform Kendall’s and Pearson’s associatio
 
 We proposed Kendall's test as a robust association test under different genotype encodings in a genome-wide association analysis of continuous traits. The R scripts provide the assessment of Kendall’s test and compares with that of Pearson's test in terms of the difference in p-values obtained by using different genotype encodings. We provide the R scripts together with real data sets in order for the readers to reproduce the results discussed in the manuscript.
 
-**Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository     
-> gen_sim.R : generating simulated data   
-> stest.R : statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
+**Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository
+* gen_sim.R : generating simulated data
+* stest.R : statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
 
 **Install prerequisites**: install kendall packages and seqinr packages
 
@@ -27,10 +27,10 @@ To generate simulated data, run gen_sim.R with the following parameters.
      n: number of samples, rho: shuffling rate
 (eg) gen_sim(0.25, 0.05, 20000, 300, 0.5)
 
-**output**   
-sim_geno1.txt: simulated genotype data with encodings E_1={0,1,2}   
-sim_geno2.txt : simulated genotype data with encodings E_1={0,1,2}   
-sim_pheno.txt : simulated phenotype data   
+**output** 
+* sim_geno1.txt: simulated genotype data with encodings E_1={0,1,2} 
+* sim_geno2.txt : simulated genotype data with encodings E_1={-1,0,1}
+* sim_pheno.txt : simulated phenotype data   
 
 
 ### Performing statistical tests 
@@ -47,11 +47,11 @@ Run the stest.R for association test with the following parameters
 (eg2) stest(real_geno1.txt, real_geno2.txt, real_pheno.txt, n_pca=4)  
 
 
-**Output**   
-xxx.jpg : the frequency distribution of ∆p_i    # xxx : trait name   
-boxplots.jpg : box plots of skewness and kurtosis   
+**Output**
+* xxx.jpg : the frequency distribution of ∆p_i    # xxx : trait name
+* boxplots.jpg : box plots of skewness and kurtosis   
 
-## Real data   
-real_geno1.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2}   
-real_geno2.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_2={-1,0,1}    
-real_pheno.txt : phenotype data of 30 traits across 193 samples   
+## Real data  
+* real_geno1.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_1={0,1,2} 
+* real_geno2.txt: genotype data of 7,551 SNPs across 193 samples with encoding E_2={-1,0,1} 
+* real_pheno.txt : phenotype data of 30 traits across 193 samples   
