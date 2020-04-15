@@ -3,9 +3,9 @@ if(!require(Kendall)) install.packages("Kendall")
 library(Kendall)
     
 stest <- function(geno1, geno2, pheno, n_pca) {
-    if(is.null(pheno))	stop("Error: provide phenotype data")
     if(is.null(geno1))	stop("Error: provide genotype encoded as E1")
     if(is.null(geno2))	stop("Error: provide genotype encoded as E2")
+    if(is.null(pheno))	stop("Error: provide phenotype data")
     if(is.null(n_pca)) stop("Error: enter number of principal components")
 
     geno_type1 <- read.table(geno1)
