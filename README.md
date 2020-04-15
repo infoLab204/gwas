@@ -7,8 +7,8 @@ R/Statest represents R scripts to perform Kendall’s and Pearson’s associatio
 We proposed Kendall's test as a robust association test under different genotype encodings in a genome-wide association analysis of continuous traits. The R scripts provide the assessment of Kendall’s test and compares with that of Pearson's test in terms of the difference in p-values obtained by using different genotype encodings. We provide the R scripts together with real data sets in order for the readers to reproduce the results discussed in the manuscript.
 
 **Loading the scripts**: copy gen_sim.R and stest.R from its GitHub repository     
-gen_sim.R: generating simulated data   
-stest.R: statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
+**gen_sim.R**: generating simulated data   
+**stest.R**: statistical hypothesis test (Kendall’s and Pearson’s test) and statistical analysis
 
 **Install prerequisites**: install kendall packages and seqinr packages
 
@@ -25,7 +25,7 @@ To generate simulated data, run gen_sim.R with the following parameters.
      gen_sim(q, pi, snp, n, rho)
      q: minor allele frequency, pi: the rate of the variation, snp : number of snp, 
      n: number of samples, rho: shuffling rate
-(eg)**gen_sim(0.25, 0.05, 20000, 300, 0.5)**
+(eg) gen_sim(0.25, 0.05, 20000, 300, 0.5)
 
 **output**   
 sim_geno1.txt: simulated genotype data with encodings E_1={0,1,2}   
@@ -43,8 +43,8 @@ Run the stest.R for association test with the following parameters
         stest(geno1, geno2, pheno, n_pca=4)
         geno1, geno2: genotype data, pheno: phenotype data, n_pca: number of principal components
 
-(eg1) **stest(sim_geno1.txt, sim_geno2.txt, sim_pheno.txt, n_pca=4)**
-(eg2) **stest(real_geno1.txt, real_geno2.txt, real_pheno.txt, n_pca=4) ** 
+(eg1) stest(sim_geno1.txt, sim_geno2.txt, sim_pheno.txt, n_pca=4)
+(eg2) stest(real_geno1.txt, real_geno2.txt, real_pheno.txt, n_pca=4)  
 
 
 **Output**   
