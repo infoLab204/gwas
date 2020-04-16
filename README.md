@@ -23,8 +23,12 @@ We proposed Kendall's test as a robust association test under different genotype
 To generate simulated data, run gen_sim.R with the following parameters.
 
      gen_sim(q, pi, snp, n, rho)
-     #q: minor allele frequency, pi: the rate of the variation, snp : number of snp, 
-     #n: number of samples, rho: shuffling rate
+     #q: minor allele frequency
+     #pi: the rate of the variation
+     #snp : number of snp 
+     #n: number of samples
+     #rho: shuffling rate
+     
 (eg) gen_sim(0.25, 0.05, 20000, 300, 0.5)
 
 **output** 
