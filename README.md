@@ -25,7 +25,7 @@ To generate simulated data, run gen_sim.R with the following parameters.
      gen_sim(q, pi, snp, n, rho)
      #q: minor allele frequency
      #pi: the rate of the variation
-     #snp : number of snp 
+     #snp: number of snp 
      #n: number of samples
      #rho: shuffling rate
      
@@ -45,7 +45,10 @@ Once the data has been loaded into R, the stest.R for association test can be ru
 Run the stest.R for association test with the following parameters
 
         stest(geno1, geno2, pheno, n_pca=4)
-        #geno1, geno2: genotype data, pheno: phenotype data, n_pca: number of principal components
+        #geno1: genotype data
+        #geno2: genotype data 
+        #pheno: phenotype data
+        #n_pca: number of principal components
 
 (eg1) stest(sim_geno1.txt, sim_geno2.txt, sim_pheno.txt, n_pca=4)    
 (eg2) stest(real_geno1.txt, real_geno2.txt, real_pheno.txt, n_pca=4)  
